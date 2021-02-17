@@ -1,0 +1,62 @@
+[
+    {
+        "id": 6,
+        "amp-story-id": "page-6",
+        "repository-title": "tm-appsec-demo",
+        "repository-description": "Trend Micro Cloud One - Application Security Demo App",
+        "product": "**Cloud One Application Security**",
+        "oem": "Trend Micro",
+        "oem-website": "https://www.trendmicro.com/en_ca/business/products/hybrid-cloud/cloud-one-application-security.html",
+        "tags": ["trendmicro", "cloudone", "application-security"]
+    },
+    {
+        "id": 5,
+        "amp-story-id": "page-5",
+        "repositoryTitle": "cloudOneConformityTemplateScanner",
+        "repositoryDescription": "These scripts will help you trigger events in Cloud One Workload Security",
+        "product": "**Cloud One Conformity**",
+        "oem": "Trend Micro",
+        "oem-website": "https://www.trendmicro.com/en_ca/business/products/hybrid-cloud/cloud-one-conformity.html",
+        "tags": ["trendmicro", "cloudone", "conformity"]
+    },
+    {
+        "id": 4,
+        "amp-story-id": "page-4",
+        "repositoryTitle": "ConformityTemplateScanner-AWS-CodeCommit",
+        "repositoryDescription": "Trend Micro Cloud One Conformity Template Scanner for AWS CodeCommit repositories",
+        "product": "**Cloud One Conformity**",
+        "oem": "Trend Micro",
+        "oem-website": "https://www.trendmicro.com/en_ca/business/products/hybrid-cloud/cloud-one-conformity.html",
+        "tags": ["trendmicro", "cloudone", "conformity"]
+    },
+    {
+        "id": 3,
+        "amp-story-id": "page-3",
+        "repositoryTitle": "NetworkSecurity-AWS-CloudWatch",
+        "repositoryDescription": "Automation to configure Trend Micro Cloud One Network Security to push IPS logs to AWS CloudWatch Log Group",
+        "product": "**Cloud One Network Security**",
+        "oem": "Trend Micro",
+        "oem-website": "https://www.trendmicro.com/en_ca/business/products/hybrid-cloud/cloud-one-network-security.html",
+        "tags": ["trendmicro", "cloudone", "network-security"]
+    },
+    {
+        "id": 2,
+        "amp-story-id": "page-2",
+        "repositoryTitle": "WorkloadSecurityConnector-AWS",
+        "repositoryDescription": "Automation scripts to setup the AWS Connector on Trend Micro Cloud One Workload Security / Deep Security (On-Prem on AWS)",
+        "product": "**Cloud One Workload Security**",
+        "oem": "Trend Micro",
+        "oem-website": "https://www.trendmicro.com/en_ca/business/products/hybrid-cloud/cloud-one-workload-security.html",
+        "tags": ["trendmicro", "cloudone", "workload-security"]
+    },
+    {
+        "id": 1,
+        "amp-story-id": "page-1",
+        "repositoryTitle": "WorkloadSecurity-AWS-SNS",
+        "repositoryDescription": "CloudFormation template for Trend Micro Cloud One Workload Security Events - Amazon SNS Integration",
+        "product": "**Cloud One Workload Security**",
+        "oem": "Trend Micro",
+        "oem-website": "https://www.trendmicro.com/en_ca/business/products/hybrid-cloud/cloud-one-workload-security.html",
+        "tags": ["trendmicro", "cloudone", "workload-security"]
+    }
+]

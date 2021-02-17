@@ -1,0 +1,49 @@
+---
+layout: default
+title: "My Projects"
+meta: Project work of George Davis. These projects represent the work that George works on.
+priority: 1.0
+changefreq: monthly
+category: pages
+keywords: projects, work, professional, developer, trendmicro, cloudone, github
+
+<amp-story standalone title="Projects" publisher="GeorgeDavis-TM" publisher-logo-src="{{site.domainUrl}}{{site.baseUrl}}/img/Author-Self-Portrait.jpg"
+    poster-portrait-src="{{site.domainUrl}}{{site.baseUrl}}/img/Author-Self-Portrait.jpg" poster-square-src="{{site.domainUrl}}{{site.baseUrl}}/img/Author-Self-Portrait.jpg"
+    poster-landscape-src="{{site.domainUrl}}{{site.baseUrl}}/img/Author-Self-Portrait.jpg">
+
+    {% assign sortedList = site.data.published-code | sort: 'id' %}
+
+    {% for project in sortedList %}            
+
+        <amp-story-page id={{ project.amp-story-id }} auto-advance-after="5s">
+            <amp-story-grid-layer template="fill">
+                <amp-img src={{site.domainUrl}}{{site.baseUrl}}/img/{{ project.amp-story-animation }} class="amp-grayscale" width="720" height="1280" layout="responsive">
+                </amp-img>
+            </amp-story-grid-layer>
+            <!-- <amp-story-grid-layer template="fill" class="amp-gradient">
+                </amp-story-grid-layer> -->
+            <amp-story-grid-layer template="vertical"> 
+                <div animate-in="fly-in-bottom" animate-in-delay="0.5s">
+                    {% if project.repository-title %}<h3>{{ project.repository-title | markdownify | strip_html }}</h3>{% endif %}
+                    {% if project.repository-description %}<p>{{ project.repository-description }}</p>{% endif %}
+                    {% if project.product %}<h4>{{ project.product | markdownify | strip_html }}</h4>{% endif %}
+                    {% if project.oem %}<h4><a href="{{ project.oem-website }}">{{ project.oem | markdownify | strip_html }}</a></h4>{% endif %}
+                </div>
+                <div animate-in="fly-in-bottom" animate-in-delay="1s">
+                    {% if project.tags %}<p><i>{{ project.tags | markdownify }}</i></p>{% endif %}
+                    <!-- {% if project.project-inspiration %}<p><i>{{ project.project-inspiration | markdownify }}</i></p>{% endif %} -->
+                    <!-- {% if project.project-benefit %}<p><i>{{ project.project-benefit | markdownify }}</i></p>{% endif %} -->
+                    <!-- {% if project.project-referral-url %}<p><i>{{ project.project-referral-url | markdownify }}</i></p>{% endif %} -->    
+                </div>            
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical">
+                <amp-img src={{site.domainUrl}}{{site.baseUrl}}/img/Author-Self-Portrait.jpg  class="logo-layer" width="64" height="64" animate-in="fly-in-bottom" animate-in-delay="2s" layout="responsive"></amp-img>    
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+    {% endfor %}    
+
+    <!-- A "bookend" panel containing links to other resources will appear on the last page of your story if you include an `amp-story-bookend` that references a [bookend JSON config](/json/bookend.json). -->
+    <!-- <amp-story-bookend src="{{site.domainUrl}}{{site.baseUrl}}/bookend.json" layout="nodisplay">
+    </amp-story-bookend> -->
+</amp-story>
