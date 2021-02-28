@@ -4,7 +4,8 @@ domainUrl: "https://georgedavis-tm.github.io"
 baseUrl: ""
 exclude: ['README.md']
 permalink: pretty
-
+title: GeorgeDavis-TM
+description: Project work of George Davis
 twitter_username: GDCrocx
 
 #Hosting settings
